@@ -12,3 +12,15 @@ rename the file to anyname if you wish to. eg I named mine to tailwindcss.exe to
 ```bash
     ./tailwindcss.exe init
 ```
+
+- watch the tailwindcss bade file which includes tailwindcss utilities for my case I named it input.cssand put it under static folder
+
+```bash
+    ./tailwindcss.exe -i ./static/input.css -o static/output.css --watch
+```
+
+# Compile and minify your CSS for production
+
+```bash
+./tailwindcss.exe -i ./static/input.css -o static/output.css --minify
+```
