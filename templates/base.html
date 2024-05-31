@@ -1,0 +1,10 @@
+{% load tailwindcss %}
+<html>
+  <head>
+    {% tailwindcss %}
+  </head>
+  <body>
+    <a class="btn btn-primary">Hello button</a>
+    {% block content%}{% endblock %}
+  </body>
+</html>
