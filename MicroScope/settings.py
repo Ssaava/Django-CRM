@@ -37,8 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # new apps
-    "tailwindcss",
 ]
 
 MIDDLEWARE = [
@@ -123,12 +121,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# new variables
-# BASE_DIR = Path(__file__).resolve().parent
-
-TAILWINDCSS_CLI_FILE = BASE_DIR / 'tailwindcss-windows-x64.exe'
-TAILWINDCSS_CONFIG_FILE = BASE_DIR / 'tailwind.config.js'
-
-# For file mode
-TAILWINDCSS_OUTPUT_FILE = 'static/style.css'
