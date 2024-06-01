@@ -5,11 +5,17 @@
     aria-label="Global"
   >
     <div class="flex items-center lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5 flex items-center lg:flex-1">
-        <span class="sr-only">Microscopy</span>
-        <img class="h-6 w-auto" src="{% static '/images/logo.png' %}" alt="" />
-        <span>Makerere AI Lab</span>
-      </a>
+      <div class="flex items-center lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5 flex items-center gap-3 text-">
+          <span class="sr-only">Microscopy</span>
+          <img
+            class="h-6 w-auto"
+            src="{% static '/images/logo.png' %}"
+            alt=""
+          />
+          <p class="text-[#020C50] font-bold text-xl">Makerere AI Lab</p>
+        </a>
+      </div>
     </div>
     <div class="flex lg:hidden">
       <button

@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% load static %}
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static '/images/logo.png' %}"
+    />
     <link href="{% static 'output.css' %}" rel="stylesheet" />
-
     <title>Microscopy || {% block title%}{% endblock %}</title>
   </head>
   <body>
     <div>{% include "components/header.html" %}</div>
 
     <main>{% block content %}{% endblock %}</main>
-
-    {% load static %}
     <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>
