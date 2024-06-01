@@ -1,6 +1,35 @@
 {% extends "base.html" %} {% block title%}Home{% endblock %} {% block content%}
-{% load static %} {% static 'images/air-bg.jpg' as img %}
-<div class="bg-white h-screen w-screen mt-[72px]">
-  <div class="bg-red-500">Hello World</div>
-</div>
+{% load static %}
+<section>
+  <div>
+    <div
+      class="bg-transparent relative h-[calc(100vh-72px)] w-screen mt-[72px]"
+    >
+      {# image could only go there if hard coded #}
+      <div class="absolute h-full w-full -z-10">
+        <img
+          src="{% static 'images/air-bg.jpg' %}"
+          alt="bg Image"
+          class="block h-full min-w-[1536px] overflow-hidden"
+        />
+      </div>
+      <div class="bg-[rgba(0,0,0,0.4)] h-full w-screen">
+        <div
+          class="text-white font-bold h-full flex justify-center flex-col text-center"
+        >
+          <h1
+            class="font-extrabold text-[clamp(1.25rem,0.8757rem+2.994vw,3.75rem)] w-screen px-6 mb-10"
+          >
+            Makerere Artificial Intelligence Lab
+          </h1>
+          <p class="text-[clamp(1rem,0.9626rem+0.2994vw,1.25rem)]">
+            An AI & Data Science Research Group based at Makerere University,
+            Uganda
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock %}
