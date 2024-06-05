@@ -13,7 +13,7 @@ rename the file to anyname if you wish to. eg I named mine to tailwindcss.exe to
     ./tailwindcss.exe init
 ```
 
-- watch the tailwindcss bade file which includes tailwindcss utilities for my case I named it input.cssand put it under static folder
+- watch the tailwindcss bade file which includes tailwindcss utilities for my case I named it input.css and put it under static folder
 
 ```bash
     ./tailwindcss.exe -i ./static/input.css -o static/output.css --watch
@@ -24,3 +24,5 @@ rename the file to anyname if you wish to. eg I named mine to tailwindcss.exe to
 ```bash
 ./tailwindcss.exe -i ./static/input.css -o static/output.css --minify
 ```
+
+## Read more about configuring tailwindcss [here](https://tailwindcss.com/blog/standalone-cli)

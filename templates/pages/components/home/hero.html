@@ -1,0 +1,30 @@
+{% load static %}
+<div>
+    <div
+      class=" relative h-[calc(100vh-72px)] w-screen mt-[72px]"
+    >
+      {# image could only go there if hard coded #}
+      <div class="absolute h-full w-screen -z-10">
+        <img
+          src="{% static 'images/air-bg.jpg' %}"
+          alt="bg Image"
+          class="block h-full w-screen min-w-[1536px] overflow-hidden"
+        />
+      </div>
+      <div class="bg-[rgba(0,0,0,0.4)] h-full w-full">
+        <div
+          class="text-white font-bold h-full flex justify-center flex-col text-center"
+        >
+          <h1
+            class="font-extrabold text-[clamp(1.25rem,0.8757rem+2.994vw,3.75rem)] w-screen px-6 mb-10"
+          >
+            Makerere Artificial Intelligence Lab
+          </h1>
+          <p class="text-[clamp(1rem,0.9626rem+0.2994vw,1.25rem)]">
+            An AI &alt; Data Science Research Group based at Makerere University,
+            Uganda
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
