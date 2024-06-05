@@ -9,7 +9,12 @@
       type="image/x-icon"
       href="{% static '/images/logo.png' %}"
     />
+
     <link href="{% static 'output.css' %}" rel="stylesheet" />
+
+    {% comment %}
+    <link rel="stylesheet" href="../static/output.css" />
+    {% endcomment %}
     <title>Microscopy || {% block title%}{% endblock %}</title>
   </head>
   <body>
