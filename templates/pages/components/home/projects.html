@@ -1,0 +1,36 @@
+{% load static %}
+
+<div class="px-[clamp(1.5625rem,-12.1094rem+43.75vw,12.5rem)] bg-[#EBECEF]">
+  <h3 class="text-center text-[#212529] font-bold text-3xl pt-7">Projects</h3>
+  <div class="flex flex-wrap justify-center py-10 gap-5">
+    {# Projects List #}
+    <a
+      class="w-[18rem] hover:shadow-lg duration-300 p-5 rounded-[1.6rem] block"
+    >
+      <img src="{% static 'images/air-bg.jpg' %}" alt="bg Image" />
+      <div>
+        <p class="text-center">
+          End-to-end AI and data systems for targeted surveillance and
+          management of COVID-19 and future pandemics affecting Uganda (COAST).
+          Radio Mining workstream
+        </p>
+      </div>
+    </a>
+    {# project 2 #}
+    <a
+      class="w-[18rem] hover:shadow-lg duration-300 p-5 rounded-[1.6rem] block"
+    >
+      <h3 class="text-center text-[#212529] font-bold text-3xl pb-5">
+        <i class="fa-solid fa-campground text-4xlm mb-5"></i>
+        <p>Mission</p>
+      </h3>
+      <div>
+        <p class="text-center">
+          To advance artificial intelligence research to solve real-world
+          challenges.
+        </p>
+      </div>
+    </a>
+    {# project 3 #}
+  </div>
+</div>
