@@ -19,11 +19,13 @@
     ></script>
     <title>Microscopy || {% block title%}{% endblock %}</title>
   </head>
-  <body>
-    <div>{% include "components/header.html" %}</div>
+  <body class="max-w-[1854px] min-[1855px]:absolute min-[1855px]:left-[50%] min-[1855px]:translate-x-[-50%]">
+    <div class="app">
+      <header>{% include "components/header.html" %}</header>
 
-    <main>{% block content %}{% endblock %}</main>
-    <footer>{% include "components/footer.html" %}</footer>
+      <main>{% block content %}{% endblock %}</main>
+      <footer>{% include "components/footer.html" %}</footer>
+    </div>
     <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>
