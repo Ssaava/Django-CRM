@@ -26,3 +26,11 @@ rename the file to anyname if you wish to. eg I named mine to tailwindcss.exe to
 ```
 
 ## Read more about configuring tailwindcss [here](https://tailwindcss.com/blog/standalone-cli)
+
+## Load the static files by running the following in the terminal within the same folder
+
+```bash
+python manage.py collectstatic
+```
+
+- this will load all the necessary static files serving the project and add a new folder to the root directory called staticFiles
