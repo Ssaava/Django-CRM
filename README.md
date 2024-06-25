@@ -34,3 +34,11 @@ python manage.py collectstatic
 ```
 
 - this will load all the necessary static files serving the project and add a new folder to the root directory called staticFiles
+
+## You do not want to load static files but want to serve them?
+
+- Run the following command
+
+```bash
+python manage.py runserver --insecure
+```
